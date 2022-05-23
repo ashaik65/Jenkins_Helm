@@ -26,6 +26,17 @@ helm repo add jenkins https://charts.jenkins.io
 helm repo update
 helm search repo jenkins
 ```
+
+```bash
+NAME           	CHART VERSION	APP VERSION	DESCRIPTION                                       
+jenkins/jenkins	4.1.1        	2.332.3    	Jenkins - Build great things at any scale! The ...
+```
+if you want to change something in values.yaml file use below cmd to fetch values.yaml file on local
+
+```bash
+helm show values jenkins/jenkins > /tmp/jenkins.yaml
+```
+
 ### Install the chart
 
 for any specific version with overridefile use below cmd
